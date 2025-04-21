@@ -1,8 +1,0 @@
-@use "sass:color";
-@use "minima/variables" as *;
-
-// Forward all modules for use by main stylesheet
-@forward "minima/variables";
-@forward "minima/base";
-@forward "minima/layout";
-@forward "minima/syntax-highlighting";

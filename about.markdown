@@ -4,8 +4,15 @@ title: About
 permalink: /about/
 ---
 
-In a previous life, I was an architect, carpenter, industrial designer...maker.
+This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 
-In this one, I am an engineer working with software, cloud technologies and well...I guess I'm still an Architect (*Solutions*). I currently teach the next generation of cloud engineers at Fortune 50 telecom and insurance companies.
+You can find the source code for Minima at GitHub:
+[jekyll][jekyll-organization] /
+[minima](https://github.com/jekyll/minima)
 
-When I'm not in front a screen, I like to read comics, build *Mobile Suit Gundam* models, and spending time with my wife, Boston Terrier, and Holland Lop rabbits.
+You can find the source code for Jekyll at GitHub:
+[jekyll][jekyll-organization] /
+[jekyll](https://github.com/jekyll/jekyll)
+
+
+[jekyll-organization]: https://github.com/jekyll
