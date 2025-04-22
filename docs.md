@@ -1,4 +1,8 @@
-# Docs
+---
+layout: page
+title: Docs
+permalink: /docs
+---
 
 Jekyll requires blog post files to be named according to the following format:
 

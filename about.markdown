@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /about
 ---
 
 My name is Dennis Huynh.
@@ -14,4 +14,4 @@ Kaneda, as in Shotaro Kaneda.
 
 Daikon (White Radish), was the name of my late Netherlands Dwarf. He was a much cuter version of Monty Python's Killer Rabbit of Caerbannog.
 
-I cannot decide between the Earth Federsation and the Principality of Zeon. 
+I cannot decide between the Earth Federsation and the Principality of Zeon.
