@@ -161,43 +161,39 @@ ls /sys/firmware/efi
 
 1. Create the encrypted container. Confirm with `YES` and create password.
 
- ```
+ ```bash
  cryptsetup luksFormat /dev/sda2
  ```
 
-2. Open the container
+1. Open the container
 
-    ```
-    cryptsetup open /dev/sda2 cryptlvm
-
- ```
+  ```bash
+  cryptsetup open /dev/sda2 cryptlvm
+  ```
 
 ### Prepare the logical volumes
 
 1. Create a physical volume on top of the opened LUKS container:
- ```
 
+ ```bash
  pvcreate /dev/mapper/cryptlvm
-
- ```
- 
-2. Create a volume group with a cool name
  ```
 
+1. Create a volume group with a cool name
+
+ ```bash
  vgcreate MyVolGroup /dev/mapper/cryptlvm
-
- ```
- 
-3. Create the logical volumes
  ```
 
+1. Create the logical volumes
+
+ ```bash
  lvcreate -L 4G -n swap MyVolGroup
  lvcreate -L 32G -n root MyVolGroup
  lvcreate -l 100%FREE -n home MyVolGroup
-
  ```
 
-4. Leave at least 256 MiB free space in the volume group to allow using [e2scrub(8)](https://man.archlinux.org/man/e2scrub.8). After creating the last volume with `-l 100%FREE`, this can be accomplished by reducing its size with `lvreduce -L -256M MyVolGroup/home`.
+1. Leave at least 256 MiB free space in the volume group to allow using [e2scrub(8)](https://man.archlinux.org/man/e2scrub.8). After creating the last volume with `-l 100%FREE`, this can be accomplished by reducing its size with `lvreduce -L -256M MyVolGroup/home`.
 
 ---
 
