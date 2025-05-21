@@ -135,11 +135,11 @@ ls /sys/firmware/efi
  fdisk /dev/sda
  ```
 
- - Press `g` to create a new **GPT partition table** (**Warning: This will erase all data**).
+- Press `g` to create a new **GPT partition table** (**Warning: This will erase all data**).
 
 - Press `w` to save and exit.
 
-2. Create a new **EFI system partition**:
+1. Create a new **EFI system partition**:
 
     - Press `n` (new partition).
     - Select partition number **1**.
@@ -148,7 +148,7 @@ ls /sys/firmware/efi
     - Press `t` to change type → **EFI System (1 or ef00)**.
     - Press `w` to write changes.
 
-3. Create the **root partition**:
+1. Create the **root partition**:
 
     - Press `n` (new partition).
     - Select partition number **2**.
